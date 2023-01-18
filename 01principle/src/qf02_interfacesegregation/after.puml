@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Interface1{
+    operation1()
+}
+interface Interface2{
+    operation2()
+    operation3()
+}
+interface Interface3{
+    operation4()
+    operation5()
+}
+
+class A
+class B
+class C
+class D
+
+A ..> Interface1
+A ..> Interface2
+
+Interface1 <|.. B
+Interface2 <|.. B
+
+C ..> Interface1
+C ..> Interface3
+
+Interface1 <|.. D
+Interface3 <|.. D
+@enduml
