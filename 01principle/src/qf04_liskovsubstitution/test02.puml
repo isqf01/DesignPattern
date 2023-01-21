@@ -1,0 +1,9 @@
+@startuml
+class base
+class A
+class B
+base <|.. A
+base <|.. B
+
+B *-- A
+@enduml
